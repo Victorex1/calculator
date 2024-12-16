@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>calculator</title>
+</head>
+<body class="containere">
+
+  
+   <div class="profile">
+      <div class="group">
+         <div class="one"></div>
+         <div class="two"></div>
+      </div>
+      
+     <h2>My Profile</h2>
+     <hr>
+     <div class="details">
+      <div>
+         <div class="circle">
+            <p>E</p>
+         </div>
+
+      </div>
+      <div>
+         <p>Name: <span class="name">Ekene</span></p>
+         <p>email: <span class="email">Ekene@gmail.com</span></p>
+         <p>Status: <span class="online">online</span></p>
+         
+      </div>
+     </div>
+     <a href="index.html"><button class="logout">log out</button></a>
+    </div>
+    <div class="container">
+      <div class="menue"  title="my profile">
+         E
+      </div>
+      
+    <div class="calculator">
+      
+        <form >
+     <div class="input">
+        <input type="text" name="res" id="">
+     </div>
+     <div>
+        <input type="button" value="AC" onclick="res.value = ''">
+        <input type="button" value="DC" onclick="res.value = res.value.toString().slice(0,-1)">
+        <input type="button" value="." onclick="res.value += '.'">
+        <input type="button" value="-" onclick="res.value += '-'">
+     </div>
+     <div>
+        <input type="button" value="7" onclick="res.value += '7'">
+        <input type="button" value="8" onclick="res.value += '8'">
+        <input type="button" value="9" onclick="res.value += '9'">
+        <input type="button" value="+" onclick="res.value += '+'">
+     </div>
+     <div>
+        <input type="button" value="4" onclick="res.value += '4'">
+        <input type="button" value="5" onclick="res.value += '5'">
+        <input type="button" value="6" onclick="res.value += '6'">
+        <input type="button" value="*" onclick="res.value += '*'">
+     </div>
+     <div>
+        <input type="button" value="1" onclick="res.value+= '1'">
+        <input type="button" value="2" onclick="res.value += '2'">
+        <input type="button" value="3" onclick="res.value += '3'">
+        <input type="button" value="/" onclick="res.value += '/'">
+     </div>
+     <div>
+        <input type="button" value="0" onclick="res.value += '0'">
+        <input type="button" value="00" onclick="res.value += '00'">
+        <input type="button" class="equal" value="=" onclick="res.value = eval(res.value)">
+     </div>
+      </form>
+    </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
