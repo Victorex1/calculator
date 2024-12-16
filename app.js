@@ -54,7 +54,6 @@ function loginSite(){
     }
 }
 
-console.log(localStorage.getItem('name')[2].toUpperCase())
 
 let profile1;
 let profile2;
@@ -71,5 +70,5 @@ proE.innerHTML = profile2;
 if(navigator.onLine){
     proON.innerHTML = 'online'
 }else{
-    proN.innerHTML = 'offline'
+    proON.innerHTML = 'offline'
 }
